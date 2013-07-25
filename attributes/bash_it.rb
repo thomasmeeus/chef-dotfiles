@@ -19,8 +19,4 @@ node.default['bash_it'] ={
   'repository' => 'https://github.com/roderik/bash-it.git'
 }
 
-if node["platform"] == "ubuntu"
-    node.default["bash_it"]["bashrc_path"]="/etc/bash.bashrc"
-else
-    node.default["bash_it"]["bashrc_path"]="/etc/bashrc"
-end
+node.default["bash_it"]["bashrc_path"]="/etc/bash.bashrc"
